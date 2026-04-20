@@ -22,7 +22,7 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{background:#f5f0e8;min-height:100vh}
 body{font-family:'Rotev',sans-serif;direction:rtl;background:#f5f0e8;min-height:100vh;padding-bottom:2rem}
-.header{background:#fdfaf5;border-bottom:2px solid #3a5a8a;padding:1rem 1.2rem 0;text-align:center;position:sticky;top:0;z-index:2}
+.header{background:#fdfaf5;border-bottom:2px solid #3a5a8a;padding:1rem 1.2rem 0;text-align:center;position:sticky;top:0;z-index:100}
 .site-title{font-family:'Rotev',sans-serif;font-size:1.8rem;color:#2a4a78;letter-spacing:3px;padding-bottom:0.7rem;line-height:1.2}
 .tabs{display:flex;border-top:1px solid #d8d0c0}
 .tab{flex:1;text-align:center;padding:20px 6px 18px;font-size:21px;font-family:'Rotev',sans-serif;color:#aaa;border-bottom:4px solid transparent;cursor:pointer;transition:color 0.2s,border-color 0.2s;display:flex;align-items:center;justify-content:center;gap:6px;user-select:none;min-height:64px}
@@ -31,9 +31,9 @@ body{font-family:'Rotev',sans-serif;direction:rtl;background:#f5f0e8;min-height:
 .tab.active .tab-icon{opacity:1}
 .tab:hover:not(.active) .tab-icon{opacity:0.6}
 .tab:hover:not(.active){color:#666}
-.page-content{max-width:520px;margin:0 auto;padding:1.2rem 1rem;position:relative;z-index:3}
-.panel{display:none}
-.panel.active{display:block}
+.page-content{max-width:520px;margin:0 auto;padding:1.2rem 1rem;position:relative;z-index:1}
+.panel{display:none;position:relative;z-index:1}
+.panel.active{display:block;position:relative;z-index:1}
 .invite-img{width:100%;border-radius:12px;overflow:hidden;margin-bottom:1rem;box-shadow:0 3px 16px rgba(58,90,138,0.12);border:2px solid #3a5a8a}
 .invite-img img{width:100%;display:block}
 .invite-placeholder{background:#fdfaf5;padding:3rem 1rem;text-align:center;font-family:'Rotev',sans-serif;color:#aaa;font-size:15px}
